@@ -31,11 +31,3 @@ pnpm-debug.log*
 .vercel
 .env.infisical
 
-# Infisical init
-.infisical.json
-
-.infisicalignore
-
-*.tgz
-cli/infisical-merge
-cli/test/infisical-merge
