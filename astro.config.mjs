@@ -12,5 +12,10 @@ export default defineConfig({
   site: 'https://luis0antonio55.github.io',
   base: 'portfolio',
   integrations: [tailwind(), react()],
-  adapter: vercel()
+  adapter: vercel({
+    imageService: true,
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
 });
