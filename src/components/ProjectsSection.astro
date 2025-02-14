@@ -1,0 +1,35 @@
+---
+import ProjectCard from "@components/ProjectCard.astro";
+import React from "@assets/react.astro";
+import Javascript from "@assets/javascript.astro";
+import SCSS from "@assets/scss.astro";
+import HTML from "@assets/icons/html-code.astro";
+import GitHubYearlyContributions from "../components/GitHubYearlyContributions";
+---
+
+<section class="my-10">
+  <h2 class="text-2xl font-semibold mb-2">Projects</h2>
+  <hr class="mb-6 border-zinc-600" />
+
+  <ProjectCard
+    projectTitle="MusicBull"
+    projectDescription="It is a platform where artists can auction their songs and record labels can buy them. In this project I was giving support and solving some backend and frontend issues, fixing design problems, functionality errors, etc."
+    projectLink="https://musicbull.com/"
+    image="/images/mpe-web.png"
+    showContributions={true}
+  >
+    <React />
+    <Javascript />
+    <GitHubYearlyContributions client:load slot="contributions" />
+  </ProjectCard>
+
+  <ProjectCard
+    projectTitle="Massive website migration"
+    projectDescription="One of the big projects I have worked on is a migration of quite a few sites in my current job using mainly SCSS, HTML and JavaScript. The sites are from clients with mechanic shops, motorcycles or boat sales."
+    image=""
+  >
+    <SCSS />
+    <HTML />
+    <Javascript />
+  </ProjectCard>
+</section>

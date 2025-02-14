@@ -1,0 +1,18 @@
+---
+import Email from "@assets/email.astro"
+import ContainerHover from "@components/ContainerHover.astro"
+import Linkedin from "@assets/linkedin.astro"
+
+---
+
+<nav class="w-full flex justify-between items-center">
+  <a href="https://github.com/luis0antonio55" target="_blank"><span class="text-xl">@luis0antonio55</span></a>
+  <div class="flex gap-3 items-center">
+    <ContainerHover link="mailto:luis0antonio5@gmail.com" title="Email Me!">
+      <Email />
+    </ContainerHover>
+    <ContainerHover link="https://www.linkedin.com/in/luis-antonio-avila-mares-376a9a190/?locale=en_US" ttitle="Let's keep in touch">
+      <Linkedin />
+    </ContainerHover>
+  </div>
+</nav>

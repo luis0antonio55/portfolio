@@ -1,0 +1,88 @@
+---
+import IconContainer from "@components/IconContainer.astro";
+import Css from "@assets/css.astro";
+import Javascript from "@assets/javascript.astro";
+import React from "@assets/icons/react.astro";
+import AstroIcon from "@assets/astro-logo.astro";
+import Git from "@assets/git.astro";
+import Github from "@assets/github.astro";
+import Vscode from "@assets/vscode.astro";
+import Scss from "@assets/scss.astro";
+import HTML from "@assets/icons/html-code.astro";
+import SqlServer from "@assets/icons/sqlserver.astro";
+import Python from "@assets/icons/python.astro";
+import Csharp from "@assets/icons/csharp.astro";
+import Infisical from "@assets/icons/infisical.astro";
+import Dnn from "@assets/icons/dnn.astro";
+import Tailwind from "@assets/tailwind.astro";
+import Dealerspike from "@assets/icons/dealerspike.astro";
+---
+
+<section class="my-10">
+  <h2 class="text-2xl font-semibold mb-1">Technologies</h2>
+  <hr class="mb-6 border-zinc-600" />
+
+  <h3 class="text-xl font-medium mb-4 siz">Frontend</h3>
+  <div class="flex flex-wrap gap-5">
+    <IconContainer name="HTML">
+      <HTML size="size-9" />
+    </IconContainer>
+    <IconContainer name="CSS">
+      <Css size="size-9" />
+    </IconContainer>
+    <IconContainer name="SCSS">
+      <Scss size="size-9" />
+    </IconContainer>
+    <IconContainer name="Javascript">
+      <Javascript size="size-9" />
+    </IconContainer>
+    <IconContainer name="React">
+      <React size="size-9" />
+    </IconContainer>
+    <IconContainer name="Astro">
+      <AstroIcon size="size-9" />
+    </IconContainer>
+    <IconContainer name="Tailwind">
+      <Tailwind size="size-9" />    
+    </IconContainer>
+  </div>
+
+  <h3 class="text-xl font-medium mt-6 mb-4">Backend</h3>
+  <div class="flex flex-wrap gap-5">
+    <IconContainer name="SQL Server">
+      <SqlServer size="size-9" />
+    </IconContainer>
+    <IconContainer
+      name="Python"
+      specialStyle={true}
+      certLink="https://drive.google.com/file/d/1-2MpmoWP0XwFcKEF2zqX6UOapBAX3A5M/view?usp=sharing"
+    >
+      <Python size="size-9" />
+    </IconContainer>
+    <IconContainer name="C#">
+      <Csharp size="size-9" />
+    </IconContainer>
+  </div>
+
+  <h3 class="text-xl font-medium mt-6 mb-4">Tools</h3>
+  <div class="flex flex-wrap gap-5">
+    <IconContainer name="Git">
+      <Git size="size-9" />
+    </IconContainer>
+    <IconContainer name="Github">
+      <Github size="size-9" />
+    </IconContainer>
+    <IconContainer name="VSCode">
+      <Vscode size="size-9" />
+    </IconContainer>
+    <IconContainer name="Infisical">
+      <Infisical size="size-9" />
+    </IconContainer>
+    <IconContainer name="DNN">
+      <Dnn size="size-9" />
+    </IconContainer>
+    <IconContainer name="Dealer Spike">
+      <Dealerspike size="size-9" />
+    </IconContainer>
+  </div>
+</section>

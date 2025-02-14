@@ -1,4 +1,3 @@
-<a href="https://garaven.vercel.app"><img src="./public/images/readme.png" alt="Portfolio displayed on different devices" width="100%"></a>
 <hr>
 <div align="center">
   <img src="https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE">
@@ -19,7 +18,7 @@ src/
 ## **Local configuration** 
 1. Clone the repo:  
 ```
-git clone https://github.com/garaven/portfolio
+git clone https://github.com/luis0antonio55/portfolio
 ```
 2. Install dependencies:
 ```  
@@ -29,3 +28,7 @@ npm install
 ```  
 npm run dev
 ```
+for infisical use:
+```  
+infisical run -- npm run dev
+```  
