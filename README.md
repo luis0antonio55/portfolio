@@ -8,12 +8,14 @@
 ## **Project structure**
 ```
 public/
-└── svg/
+└── images/
 src/
 ├── assets/
 ├── components/
 ├── layouts/
 └── pages/
+
+
 ```
 
 ## **Local configuration** 
