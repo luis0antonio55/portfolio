@@ -2,9 +2,13 @@
 import ProjectCard from "@components/ProjectCard.astro";
 import React from "@assets/react.astro";
 import Javascript from "@assets/javascript.astro";
+import AstroIcon from "@assets/astro-logo.astro";
+import Tailwind from "@assets/tailwind.astro";
 import SCSS from "@assets/scss.astro";
 import HTML from "@assets/icons/html-code.astro";
 import GitHubYearlyContributions from "../components/GitHubYearlyContributions";
+import { Image } from 'astro:assets';
+import MPE from '../assets/mpe-web.png';
 ---
 
 <section class="my-10">
@@ -21,6 +25,18 @@ import GitHubYearlyContributions from "../components/GitHubYearlyContributions";
     <React />
     <Javascript />
     <GitHubYearlyContributions client:load slot="contributions" />
+  </ProjectCard>
+
+  <ProjectCard
+    projectTitle="BeaverAI"
+    projectDescription="This is an AI-powered chatbot designed to assist UACH (Universidad Autónoma de Chihuahua) students and staff. The chatbot provides information and answers questions. Without doing the students' work, but rather serving as a guide to help them complete their assignments, projects, or answer their questions."
+    projectLink="https://github.com/luis0antonio55/chatbot"
+    image="./images/beaver-ai.png"
+  >
+
+    <Tailwind size="size-9" />   
+    <AstroIcon size="size-9" />
+    <Javascript />
   </ProjectCard>
 
   <ProjectCard
