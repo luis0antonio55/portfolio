@@ -4,6 +4,9 @@ import React from "@assets/react.astro";
 import Javascript from "@assets/javascript.astro";
 import AstroIcon from "@assets/astro-logo.astro";
 import Tailwind from "@assets/tailwind.astro";
+import TypeScript from "@assets/typescript.astro";
+import Sqlite from "@assets/sqlite.astro";
+import NextJS from "@assets/nextjs.astro";
 import SCSS from "@assets/scss.astro";
 import HTML from "@assets/icons/html-code.astro";
 import GitHubYearlyContributions from "../components/GitHubYearlyContributions";
@@ -37,6 +40,19 @@ import MPE from '../assets/mpe-web.png';
     <Tailwind size="size-9" />   
     <AstroIcon size="size-9" />
     <Javascript />
+  </ProjectCard>
+
+
+    <ProjectCard
+    projectTitle="CRUD (Next.js + Turso/SQLite + Vercel)"
+    projectDescription="A full CRUD for Students and Teachers built with Next.js (App Router) and TypeScript. Data is stored in a Turso (SQLite/libSQL) database, and the app is deployable on Vercel."
+    projectLink="https://github.com/luis0antonio55/academic-crud"
+    image="./images/academica.png"
+  >
+
+    <NextJS />
+    <Sqlite />
+    <TypeScript  />
   </ProjectCard>
 
   <ProjectCard
