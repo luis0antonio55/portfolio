@@ -10,14 +10,27 @@ import NextJS from "@assets/nextjs.astro";
 import SCSS from "@assets/scss.astro";
 import HTML from "@assets/icons/html-code.astro";
 import GitHubYearlyContributions from "../components/GitHubYearlyContributions";
-import { Image } from 'astro:assets';
-import MPE from '../assets/mpe-web.png';
+import { Image } from "astro:assets";
+import MPE from "../assets/mpe-web.png";
+import Superbase from "@assets/superbase.astro";
 ---
 
 <section class="my-10">
   <h2 class="text-2xl font-semibold mb-2">Projects</h2>
   <hr class="mb-6 border-zinc-600" />
 
+  <ProjectCard
+    projectTitle="Aby Abyss Blog (Next.js + Superbase + Vercel)"
+    projectDescription="A personal, content-driven blog built as a digital space dedicated to poetry, art, videos, and written thoughts. The project combines a soft, aesthetic visual design with a full admin system that allows content to be created, edited, and published dynamically."
+    projectLink="https://github.com/luis0antonio55/aby-abyss-blog"
+    image="./images/abyblog.png"
+  >
+    <NextJS />
+    <React />
+    <TypeScript />
+    <Tailwind size="size-9" />
+    <Superbase size="size-9" />
+  </ProjectCard>
   <ProjectCard
     projectTitle="MusicBull"
     projectDescription="It is a platform where artists can auction their songs and record labels can buy them. In this project I was giving support and solving some backend and frontend issues, fixing design problems, functionality errors, etc."
@@ -36,23 +49,20 @@ import MPE from '../assets/mpe-web.png';
     projectLink="https://github.com/luis0antonio55/chatbot"
     image="./images/beaver-ai.png"
   >
-
-    <Tailwind size="size-9" />   
+    <Tailwind size="size-9" />
     <AstroIcon size="size-9" />
     <Javascript />
   </ProjectCard>
 
-
-    <ProjectCard
+  <ProjectCard
     projectTitle="CRUD (Next.js + Turso/SQLite + Vercel)"
     projectDescription="A full CRUD for Students and Teachers built with Next.js (App Router) and TypeScript. Data is stored in a Turso (SQLite/libSQL) database, and the app is deployable on Vercel."
     projectLink="https://github.com/luis0antonio55/academic-crud"
     image="./images/academica.png"
   >
-
     <NextJS />
     <Sqlite />
-    <TypeScript  />
+    <TypeScript />
   </ProjectCard>
 
   <ProjectCard
