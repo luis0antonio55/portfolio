@@ -1,33 +1,48 @@
 ---
-import Analytics from '@vercel/analytics/astro';
+import Analytics from "@vercel/analytics/astro";
+import SpeedInsights from "@vercel/speed-insights/astro";
 const title = Astro.props.title;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-		<title>{title}</title>
-		<Analytics />
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+    <Analytics />
+    <script is:inline>
+      function speedInsightsBeforeSend(data) {
+        console.log("Speed Insights before send", data);
+        return data;
+      }
+    </script>
+    <SpeedInsights />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		font-family: 'Lora', sans-serif;
-		background: rgb(63,66,66);
-		background: radial-gradient(circle, rgba(63,66,66,1) 0%, rgba(13,12,12,1) 100%);
-		color: #fff;
-	}
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", sans-serif;
+    background: rgb(63, 66, 66);
+    background: radial-gradient(
+      circle,
+      rgba(63, 66, 66, 1) 0%,
+      rgba(13, 12, 12, 1) 100%
+    );
+    color: #fff;
+  }
 </style>
