@@ -54,7 +54,18 @@ const GitHubYearlyContributions = () => {
     fetchContributions();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
+ if (loading) return (
+    <div className="flex gap-4 justify-center animate-pulse">
+      <div className="bg-gray-800 p-4 rounded-lg">
+        <h3 className="text-xl font-bold text-transparent bg-gray-600 rounded mb-2">2023</h3>
+        <p className="text-transparent bg-gray-600 rounded">000 contributions</p>
+      </div>
+      <div className="bg-gray-800 p-4 rounded-lg">
+        <h3 className="text-xl font-bold text-transparent bg-gray-600 rounded mb-2">2024</h3>
+        <p className="text-transparent bg-gray-600 rounded">000 contributions</p>
+      </div>
+    </div>
+  );
 
   return (
     <div className="flex gap-4 justify-center">

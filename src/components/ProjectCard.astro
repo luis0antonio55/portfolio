@@ -24,16 +24,13 @@ import ArrowLink from "@assets/arrow-link.astro";
     >
       <h3 class="text-l font-semibold inline-block">{projectTitle}</h3>
       <span class="text-zinc-400">
-        {
-          projectLink && (
-            <ArrowLink size="w-5 h-5" />
-          )
-        }
-        
+        {projectLink && <ArrowLink size="w-5 h-5" />}
       </span>
     </a>
 
-    <p class="text-zinc-400 text-sm text-pretty mb-4 text-justify">{projectDescription}</p>
+    <p class="text-zinc-400 text-sm text-pretty mb-4 text-justify">
+      {projectDescription}
+    </p>
 
     <!-- Technologies -->
     <div class="flex items-center gap-3">
@@ -46,7 +43,7 @@ import ArrowLink from "@assets/arrow-link.astro";
     image && (
       <div class="md:w-52 md:ml-6 mb-5 md:mb-0 pt-5 md:pt-0  ">
         <img
-          class="w-full shadow-xl rounded-lg"
+          class="w-full aspect-video object-cover bg-zinc-800 shadow-xl rounded-lg"
           src={image}
           alt={`${projectTitle} image`}
         />
