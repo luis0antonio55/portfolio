@@ -10,6 +10,7 @@ const GitHubYearlyContributions = () => {
       const username = import.meta.env.PUBLIC_GITHUB_USERNAME;
       const token = import.meta.env.PUBLIC_GITHUB_TOKEN;
       
+
       const query = `
         query {
           user(login: "${username}") {
